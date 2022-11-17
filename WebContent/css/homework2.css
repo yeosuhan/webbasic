@@ -51,6 +51,7 @@
 
 #footer {
 	clear: both;
+	display: flex;
 }
 
 #footer .leftside {
@@ -83,13 +84,9 @@
 	clear: both;
 }
 
-#footer .rs1 .img1 {
-	width: 33.3%;
-	float: left;
-	box-sizing: border-box;
+#footer #rs1 .img1 {
+	height:211px;
 }
-#footer .rs1 .img1 {
-	width: 33.3%;
-	float: left;
-	box-sizing: border-box;
+#footer #rs1 .img2 {
+	height:95px;
 }
