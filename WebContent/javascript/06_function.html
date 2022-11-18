@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  		 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+ 		 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ 		 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+ 		 <script>
+ 		 
+ 		 	//함수 선언
+ 		 	function fun1() {
+ 		 		console.log("fun1 실행");
+ 		 	}
+ 		 	//함수 호출
+ 		 	fun1();
+ 		 	
+ 		 	//함수 선언
+ 		 	function fun2(x,y) {
+ 		 		return (x+y);
+ 		 	}
+ 		 	//함수 호출 후 리턴값 받기
+ 		 	let result = fun2(2,3);
+ 		 	console.log("result: " + result);
+ 		 	
+ 		 	function ask(name) {
+	 		 	console.log(name + "님이 들어오셨습니다");
+	 		 	console.log("ㅎㅇㅎㅇ");
+	 		 	console.log("ㅇㅎㅇㅎㅇ");
+ 		 	}
+ 		 	//함수 호출 및 매개값 전달
+ 		 	ask("여수한");
+ 		 	ask("이연희");
+ 		 	ask("이지호");
+ 		 	ask("김지영");
+ 		 	
+ 		 	//함수 선언
+ 		 	function fun3(arg1, arg2, arg3,arg4) {
+ 		 		//if()에 매개변수가 들어갈 수 있다.
+ 		 		if(arg1) console.log("arg1: " + arg1);
+ 		 		if(arg2) console.log("arg2: " + arg2);
+ 		 		if(arg3)console.log("arg3: " + arg3);
+ 		 		if(arg4)console.log("arg4: " + arg4);
+ 		 		console.log("------------------------");
+ 		 	}
+ 		 	//함수의 매개값만큼 안줘도 된다.
+ 		 	fun3();
+ 		 	fun3("여수한");
+ 		 	fun3("여수한", "이연희");
+ 		 	fun3("여수한", "이연희", "이지호");
+ 		 	fun3("여수한", "이연희", "이지호", "김지영");
+ 		 	
+ 		 </script>
+	</head>
+	<body>
+		<div class="card">
+			<div class="card-hearder">
+				Function
+			</div>
+			<div class="card-body">
+				<button onclick="fun1()" class="btn btn-info btn-small">fun1() 호출</button>
+				
+			</div>
+		</div>
+	</body>
+</html>
